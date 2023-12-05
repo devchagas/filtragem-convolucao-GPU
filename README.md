@@ -24,21 +24,27 @@ vez. Alguns exemplos de filtros são o já citado acima, filtro da média simple
 para suavizar a imagem reduzindo o ruído, a matriz é preenchida com valores iguais 
 que representam pesos uniformes para a média, por exemplo um filtro da média 3x3:
 
-filtroMedia = | 1/9 | 1/9 | 1/9 | 
-              | 1/9 | 1/9 | 1/9 |
-              | 1/9 | 1/9 | 1/9 |
+filtroMedia = 
+| 1/9 | 1/9 | 1/9 |
+|---|---|---|
+| 1/9 | 1/9 | 1/9 |
+| 1/9 | 1/9 | 1/9 |
 
 Outro filtro muito utilizado e também já citado é o Filtro Sobel usado comumente para 
 realçar e detectar bordas, elas consistem em dois tipos de matrizes. Uma para detecção 
 de bordas horizontais e outra para bordas verticais, um exemplo do filtro Sobel 3x3:
 
-sobelHorizontal = | -1 | -2 | -1 | 
-                  | 0 | 0 | 0 |
-                  | 1 | 2 | 1 |
+sobelHorizontal = 
+| -1 | -2 | -1 |
+|---|---|---|
+| 0 | 0 | 0 |
+| 1 | 2 | 1 |
 
-sobelVertical = | -1 | 0 | 1 | 
-                | -2 | 0 | 2 |
-                | -1 | 0 | 1 |
+sobelVertical =
+| -1 | 0 | 1 |
+|---|---|---|
+| 2 | 0 | 2 |
+| -1 | 0 | 1 |
 
 Com o filtro escolhido devemos então aplica-lo na imagem, para isso fazemos então o 
 processo de convolução, isto é, deslizar a pequena matriz do filtro sobre a matriz de 
